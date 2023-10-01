@@ -52,7 +52,6 @@ class ListNode {
     return dummy.next;
   }
   
-  // Helper function to print the linked list
   function printList(head) {
     let current = head;
     while (current) {
@@ -62,10 +61,20 @@ class ListNode {
     console.log("null");
   }
   
-  // Example usage:
   const head = new ListNode(3, new ListNode(1, new ListNode(4, new ListNode(2, new ListNode(5)))));
   const sortedHead = mergeSort(head);
   
   console.log("Sorted Linked List:");
   printList(sortedHead);
+
+// Time Complexity:
+// The time complexity of this merge sort implementation for a linked list is O(n log n).
+
+// Space Complexity:
+// The space complexity is O(log n) due to the recursion stack.
+
+
+
+
+
   

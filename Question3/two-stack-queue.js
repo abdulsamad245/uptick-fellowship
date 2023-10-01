@@ -34,8 +34,8 @@ class QueueWithTwoStacks {
       return this.stack1.length + this.stack2.length;
     }
   }
+ 
   
-  // Example usage:
   const queue = new QueueWithTwoStacks();
   queue.enqueue(1);
   queue.enqueue(2);
